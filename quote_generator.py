@@ -28,6 +28,6 @@ def generate_quote(author, quote):
 user_input = input('Press any key to get a really cool quote, press B to quit.')
 
 #as long as the user does not press 'B' or 'b' to quit the program, it will keep generating a new quote whenever a key is pressed
-while user_input != 'B' and user_input != 'b':
+while user_input.lower() != 'b':
     print(generate_quote(random_pick(authors), random_pick(quotes)))
     user_input = input('Press any key to get another cool quote, press B to quit.\n')
